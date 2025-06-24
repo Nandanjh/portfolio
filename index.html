@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <div class="logo">
+            <span class="logo-text">Portfolio<span class="accent">.</span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="glitch-text" data-text="Web Developer">Web Developer</h1>
+                    <p class="subtitle">Creating modern digital experiences</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn primary-btn">View Projects</a>
+                        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="orbit-container">
+                        <div class="orbit-circle"></div>
+                        <div class="tech-icon" style="--i:0;"><i class="fab fa-html5"></i></div>
+                        <div class="tech-icon" style="--i:1;"><i class="fab fa-css3-alt"></i></div>
+                        <div class="tech-icon" style="--i:2;"><i class="fab fa-js"></i></div>
+                        <div class="tech-icon" style="--i:3;"><i class="fab fa-react"></i></div>
+                        <div class="tech-icon" style="--i:4;"><i class="fab fa-node-js"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow-down"></div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="management">Management</button>
+            </div>
+
+            <div class="projects-container">
+                <!-- ResearchBy.ai Project -->
+                <div class="project-card" data-category="web">
+                    <div class="project-content">
+                        <div class="project-image-container">
+                            <div class="project-image" style="--bg-color: #4A00E0;">
+                                <span class="project-icon"><i class="fas fa-robot"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">ResearchBy.ai</h3>
+                            <p class="project-description">AI-powered research platform that automates multi-source investigations, producing polished reports for business, academic, and professional use.</p>
+                            <div class="project-features">
+                                <span class="feature">Multi-agent AI</span>
+                                <span class="feature">Citation-backed docs</span>
+                                <span class="feature">Tiered plans</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://researchby.ai" target="_blank" class="project-link">Visit Site <i class="fas fa-external-link-alt"></i></a>
+                                <button class="project-details-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="details-content">
+                            <h4>Role & Tech Snapshot:</h4>
+                            <ul>
+                                <li>Designed the UI/UX for topic input → AI analysis → document generation → download flow</li>
+                                <li>Integrated AI-agent framework, network-insight tools, and multi-format output pipeline</li>
+                                <li>Built support screens: Pricing, FAQs, contact form, onboarding demo flows</li>
+                            </ul>
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Multi-agent AI conducts in-depth research in minutes</li>
+                                <li>Generates structured, citation-backed Word documents complete with TOC and visuals</li>
+                                <li>Tiered plans: Free (1 report/mo), Starter ($40), Pro ($95), Premium ($270)</li>
+                                <li>Trusted by users for investor prep, market analysis, and business proposals</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BetterCRM.ai Project -->
+                <div class="project-card" data-category="management">
+                    <div class="project-content">
+                        <div class="project-image-container">
+                            <div class="project-image" style="--bg-color: #00B4DB;">
+                                <span class="project-icon"><i class="fas fa-chart-line"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">BetterCRM.ai</h3>
+                            <p class="project-description">Enterprise-grade AI agent suite that analyzes Salesforce CRM usage, codebase health, adoption metrics, cost efficiency, and security.</p>
+                            <div class="project-features">
+                                <span class="feature">Feature adoption</span>
+                                <span class="feature">Code scanning</span>
+                                <span class="feature">Enterprise focus</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://bettercrm.ai" target="_blank" class="project-link">Visit Site <i class="fas fa-external-link-alt"></i></a>
+                                <button class="project-details-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="details-content">
+                            <h4>Role & Tech Snapshot:</h4>
+                            <ul>
+                                <li>Led development of analytics dashboards showing user behavior, adoption, and cost insights</li>
+                                <li>Built integration with Salesforce APIs and agent-driven SQL/data-model analysis tools</li>
+                                <li>Designed marketing pages focused on enterprise audiences</li>
+                            </ul>
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Tracks feature adoption, user engagement, ROI, and license optimization</li>
+                                <li>Scans custom code for vulnerabilities and tech-debt issues</li>
+                                <li>Targets small startups to Fortune 100s; strong consultancy branding and demo access</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scholift.com Project -->
+                <div class="project-card" data-category="management">
+                    <div class="project-content">
+                        <div class="project-image-container">
+                            <div class="project-image" style="--bg-color: #FF4500;">
+                                <span class="project-icon"><i class="fas fa-school"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Scholift.com</h3>
+                            <p class="project-description">School management system tailored for private schools in Bihar. Digitizes attendance, fees, student promotion, and parent communication without requiring tech expertise.</p>
+                            <div class="project-features">
+                                <span class="feature">One-tap attendance</span>
+                                <span class="feature">Fee tracking</span>
+                                <span class="feature">Offline-capable</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://scholift.com" target="_blank" class="project-link">Visit Site <i class="fas fa-external-link-alt"></i></a>
+                                <button class="project-details-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="details-content">
+                            <h4>Role & Tech Snapshot:</h4>
+                            <ul>
+                                <li>Defined overall product architecture: Home, Features, Why, FAQ, Contact</li>
+                                <li>Designed core dashboard mockups: attendance, fee dashboard, student metrics</li>
+                                <li>Featured offline-first behavior, WhatsApp/SMS integration, data migration flows</li>
+                                <li>Crafted marketing copy emphasizing "no tech team needed" and local context</li>
+                            </ul>
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>One-tap attendance with automatic WhatsApp/SMS alerts to parents</li>
+                                <li>Fee collection & tracking, supporting both online and offline payments, with automated reminders</li>
+                                <li>Seamless student promotion—batch-promote classes with flexible roll number handling</li>
+                                <li>Offline-capable, designed for schools with unreliable internet</li>
+                                <li>No technical staff needed—simple UI, easy deployment in under-resourced environments</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NalgenBio.com Project -->
+                <div class="project-card" data-category="web">
+                    <div class="project-content">
+                        <div class="project-image-container">
+                            <div class="project-image" style="--bg-color: #2ecc71;">
+                                <span class="project-icon"><i class="fas fa-dna"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">NalgenBio.com</h3>
+                            <p class="project-description">Kolkata-based biotech company specializing in genomics, proteomics, sequencing services, and molecular reagents.</p>
+                            <div class="project-features">
+                                <span class="feature">NGS services</span>
+                                <span class="feature">Lab supplies</span>
+                                <span class="feature">Biotech focus</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://nalgenbio.com" target="_blank" class="project-link">Visit Site <i class="fas fa-external-link-alt"></i></a>
+                                <button class="project-details-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="details-content">
+                            <h4>Role & Tech Snapshot:</h4>
+                            <ul>
+                                <li>Created company website structure: Home/About/Services/Products/Contact</li>
+                                <li>Designed service pages with inquiry forms (NGS, proteomics, etc.)</li>
+                                <li>Implemented video highlights and dynamic product catalog</li>
+                            </ul>
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Offers NGS, proteomics, Sanger sequencing, oligo synthesis</li>
+                                <li>Supplies laboratory instruments, reagents, antibodies, consumables</li>
+                                <li>Incorporated May 9, 2022; headquartered at Jodhpur Park, Kolkata</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Garner.ae Project -->
+                <div class="project-card" data-category="ecommerce">
+                    <div class="project-content">
+                        <div class="project-image-container">
+                            <div class="project-image" style="--bg-color: #e74c3c;">
+                                <span class="project-icon"><i class="fas fa-dumbbell"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Garner.ae</h3>
+                            <p class="project-description">Dubai-based supplier of home and commercial gym equipment, representing global brands like Force USA.</p>
+                            <div class="project-features">
+                                <span class="feature">E-commerce</span>
+                                <span class="feature">Product catalog</span>
+                                <span class="feature">Financing options</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://garner.ae" target="_blank" class="project-link">Visit Site <i class="fas fa-external-link-alt"></i></a>
+                                <button class="project-details-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="details-content">
+                            <h4>Role & Tech Snapshot:</h4>
+                            <ul>
+                                <li>Built e-commerce catalog with filters across product types and brands</li>
+                                <li>Integrated location/shop details, showroom hours, CTAs (call, email, cart)</li>
+                                <li>Created promotional banners (sales, financing offers) and support pages</li>
+                            </ul>
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Offers a wide range: all-in-one trainers, cardio gear, strength machines, commercial setups</li>
+                                <li>Promotes summer sale, free shipping/install, "buy now pay later", Dubai showroom info</li>
+                                <li>Established 2018; 11–50 employees, ~600 LinkedIn followers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2 class="section-title">About <span class="accent">Me</span></h2>
+                    <p class="about-text">
+                        I'm a passionate web developer specializing in creating modern, responsive, and user-friendly websites. With expertise in HTML, CSS, JavaScript, and various frameworks, I bring creative ideas to life through clean and efficient code.
+                    </p>
+                    <p class="about-text">
+                        My approach combines technical excellence with creative design to deliver websites that not only look great but also perform exceptionally well. I focus on creating seamless user experiences that help businesses achieve their goals.
+                    </p>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">Responsive Design</span>
+                            <span class="skill-tag">E-commerce</span>
+                            <span class="skill-tag">API Integration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="experience-card">
+                        <div class="experience-number">5+</div>
+                        <div class="experience-text">Years of Experience</div>
+                    </div>
+                    <div class="projects-card">
+                        <div class="projects-number">50+</div>
+                        <div class="projects-text">Projects Completed</div>
+                    </div>
+                    <div class="clients-card">
+                        <div class="clients-number">30+</div>
+                        <div class="clients-text">Happy Clients</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>nandan33361@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+91 9334007868</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Kolkata, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn primary-btn submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-text">Portfolio<span class="accent">.</span></span>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Your Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
